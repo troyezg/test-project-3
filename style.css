@@ -85,7 +85,7 @@ body {
     pointer-events: all;
 }
 
-.header-page-border {
+.header-block-border {
     position: relative;
     width: 64px;
     height: 4px;
@@ -135,15 +135,16 @@ body {
     position: relative;
 }
 
-.landing-page {
+.landing-block {
     position: relative;
     width: 100%;
     height: 480px;
+    overflow: hidden;
     box-sizing: border-box;
     background: #D9EDDE;
 }
 
-.landing-page__content {
+.landing-block__content {
     position: relative;
     width: calc(100% - 260px);
     height: fit-content;
@@ -156,7 +157,7 @@ body {
     padding: 0px 130px;
 }
 
-.landing-page__text-block {
+.landing-block__text-block {
     position: relative;
     width: 738px;
     height: 248px;
@@ -239,11 +240,4 @@ body {
     margin: 0;
 
     color: #FFFFFF;
-}
-
-.landing-page {
-    position: relative;
-    width: auto;
-    height: 480px;
-    overflow: hidden;
 }
