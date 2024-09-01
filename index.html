@@ -8,9 +8,9 @@
     <title>Авто Отзывы</title>
 </head>
 <body>
-    <header class="main-header">
+    <header class="main-header" id="main-header">
         <div class="main-header__content">
-            <img class="header-logo" src="./images/logo.png" alt="header-logo">
+            <a href="index.html"><img class="header-logo" src="./images/logo.png" alt="header-logo"></a>
             <nav class="header-nav">
                 <ul class="header-nav__list">
                     <li>
@@ -40,14 +40,14 @@
             </button>
         </div>
     </header>
-    <section class="landing-block">
+    <section class="landing-block" id="landing-block">
         <div class="landing-block__content">
             <div class="landing-block__text-block">
                 <div class="text-block__text-container">
                     <h1 class="text-block__title">Отзывы об автосалонах по всей России</h1>
                     <h5 class="text-block__text">Мы собираем только реальные отзывы покупателей и посетителей автосалонов, чтобы поделиться ими с Вами! Надеемся, и Вы примите активное участие в обсуждениях, и не станете жертвой автообмана!</h5>
                 </div>
-                <button class="text-block__button">
+                <button class="text-block__button" onclick="location.href='#cards-block'">
                     <span class="button__text">Найти отзывы об автосалоне</span>
                 </button>
             </div>
@@ -55,20 +55,20 @@
             <img class="landing-block__mobile-image" src="./images/mobile-landing-image.png" alt="mobile-landing-image">
         </div>
     </section>
-    <section class="cards-block">
+    <section class="cards-block" id="cards-block">
         <div class="cards-block__cards-content">
             <div class="choose-city-block">
                 <h2 class="choose-city-block__text">Выберите <a href="#"><span class="choose-city-block__text__green">город</span></a></h2>
                 <div class="choose-city-block__border"></div>
             </div>
             <div class="order-by-block">
-                <h4 class="order-by-block__text">Сортировать <span class="order-by-block__text__order-type">по популярности</span></h4>
-                <img class="order-by-block__icon" src="./images/choose-arrow.svg" alt="choose-arrow">
+                <h4 class="order-by-block__text">Сортировать <span class="order-by-block__text__order-type" id="order-by-block__text__order-type">по популярности</span></h4>
+                <img class="order-by-block__icon" id="order-by-block__icon" src="./images/choose-arrow.svg" alt="choose-arrow">
             </div>
             <div class="cards-container" id="cards-container">
 
             </div>
-            <button class="cards-container__button"><span class="cards-container__button__text">Показать еще</span></button>
+            <button class="cards-container__button" id="cards-container__button"><span class="cards-container__button__text">Показать еще</span></button>
         </div>
         <div class="cards-block__add-block">
             <div class="cards-block__add-block__ladder-block">
@@ -107,7 +107,7 @@
             </div>
             <div class="cards-block__add-block__add-container">
                 <!-- Заглушка вместо блока с рекламой -->
-                <img class="cards-block__add-block__add-container__content" src="./images/add-block.png" alt="add-block">
+                <a href="https://direct.yandex.ru/"><img class="cards-block__add-block__add-container__content" src="./images/add-block.png" alt="add-block"></a>
             </div>
         </div>
     </section>
@@ -122,7 +122,7 @@
                 </div>
             <div class="main-footer__content__button-block">
                 <button class="main-footer__content__button-block__add-button"><span class="footer-button-text">Добавить автосалон</span></button>
-                <button class="main-footer__content__button-block__up-button"><img class="main-footer__content__button-block__up-button__icon" src="./images/arrow-icon.svg" alt="button-arrow-icon"></button>
+                <button class="main-footer__content__button-block__up-button" onclick="location.href='#main-header'"><img class="main-footer__content__button-block__up-button__icon" src="./images/arrow-icon.svg" alt="button-arrow-icon"></button>
             </div>
             <div class="main-footer__content__line"></div>
             <button class="main-footer__content__button-block__add-button mobile-button"><span class="footer-button-text">Добавить автосалон</span></button>

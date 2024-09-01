@@ -10,7 +10,8 @@ var CardsInfo = [
         address: 'Университетская Набережная, 68',
         phone: '+7 (351) 220-78-13',
         site: 'crystal-motors.ru',
-        trust: 'high'
+        trust: 'Высокий рейтинг доверия',
+        trustcolor: 'green-trust'
     },
     {
         id: 2,
@@ -22,7 +23,8 @@ var CardsInfo = [
         address: '33км МКАД 6с6',
         phone: '+7 (495) 266-24-45',
         site: 'alcon-auto.ru',
-        trust: 'low'
+        trust: 'Много негативных отзывов',
+        trustcolor: 'red-trust'
     },
     {
         id: 3,
@@ -34,7 +36,8 @@ var CardsInfo = [
         address: 'Лыжная, 3',
         phone: '+7 (814) 255-90-38',
         site: 'proxy-cars.ru',
-        trust: 'mid'
+        trust: 'Мало отзывов',
+        trustcolor: 'yellow-trust'
     },
     {
         id: 4,
@@ -46,7 +49,8 @@ var CardsInfo = [
         address: 'Братьев Кашириных, 147А',
         phone: '+7 (351) 200-74-68',
         site: 'ac-aquamarine.ru',
-        trust: 'low'
+        trust: 'Новый автосалон (менее 1 года)',
+        trustcolor: 'yellow-trust'
     },
     {
         id: 5,
@@ -58,7 +62,8 @@ var CardsInfo = [
         address: 'Кузнецова, 1А',
         phone: '+7 (351) 242‑00‑89',
         site: 'chel.autohouse24.ru',
-        trust: 'high'
+        trust: 'Высокий рейтинг доверия',
+        trustcolor: 'green-trust'
     },
     {
         id: 6,
@@ -70,7 +75,8 @@ var CardsInfo = [
         address: 'Братьев Кашириных, 135',
         phone: '+7 (351) 220-82-79',
         site: 'pncentr.rus',
-        trust: 'mid'
+        trust: 'Мало отзывов',
+        trustcolor: 'yellow-trust'
     },
 ]
 
@@ -79,7 +85,30 @@ var cardcontainer = document.getElementById("cards-container");
 for (let i = 0; i < 18; i++) {
     let b = Math.floor(Math.random() * 5);
     console.log("b is " + b);
-    cardcontainer.innerHTML += '<div class="cards-container__card"><div class="cards-container__card__reviews-colors"><p class="cards-container__card__reviews-colors__text">Высокий рейтинг доверия</p></div><div class="cards-container__card__name-block"><img class="cards-container__card__name-block__image" src="'+ CardsInfo[b].logo +'" alt="card-logo"><div class="cards-container__card__name-block__text-block"><h3 class="card-title">'+ CardsInfo[b].name +'</h3><img class="card-star-icon" src="./images/star-icon.svg" alt="star-icon"><h3 class="card-rating">'+ CardsInfo[b].rating +'</h3><h4 class="card-reviews">'+ CardsInfo[b].reviews +' отзывов</h4></div></div><div class="cards-container__card__info-block"><p class="info-block-type">Город:</p><p class="info-block-text">'+ CardsInfo[b].city +'</p><p class="info-block-type">Адрес</p><p class="info-block-text">'+ CardsInfo[b].address +'</p><p class="info-block-type">Телефон:</p><p class="info-block-text">'+ CardsInfo[b].phone +'</p><p class="info-block-type">Сайт:</p><p class="info-block-text">'+ CardsInfo[b].site +'</p></div><div class="cards-container__card__buttons-block"><button class="card-details-button"><span class="card-details-button__text">Подробнее</span></button><button class="card-share-button"><img class="card-share-button__icon" src="./images/share-icon.svg" alt="share-icon"></button></div></div>'
+    cardcontainer.innerHTML += '<div class="cards-container__card"><div class="cards-container__card__reviews-colors '+ CardsInfo[b].trustcolor +'"><p class="cards-container__card__reviews-colors__text">'+ CardsInfo[b].trust +'</p></div><div class="cards-container__card__name-block"><img class="cards-container__card__name-block__image" src="'+ CardsInfo[b].logo +'" alt="card-logo"><div class="cards-container__card__name-block__text-block"><h3 class="card-title">'+ CardsInfo[b].name +'</h3><img class="card-star-icon" src="./images/star-icon.svg" alt="star-icon"><h3 class="card-rating">'+ CardsInfo[b].rating +'</h3><h4 class="card-reviews">'+ CardsInfo[b].reviews +' отзывов</h4></div></div><div class="cards-container__card__info-block"><p class="info-block-type">Город:</p><p class="info-block-text">'+ CardsInfo[b].city +'</p><p class="info-block-type">Адрес</p><p class="info-block-text">'+ CardsInfo[b].address +'</p><p class="info-block-type">Телефон:</p><p class="info-block-text">'+ CardsInfo[b].phone +'</p><p class="info-block-type">Сайт:</p><p class="info-block-text">'+ CardsInfo[b].site +'</p></div><div class="cards-container__card__buttons-block"><button class="card-details-button"><span class="card-details-button__text">Подробнее</span></button><button class="card-share-button"><img class="card-share-button__icon" src="./images/share-icon.svg" alt="share-icon"></button></div></div>'
+}
+
+document.getElementById("cards-container__button").onclick = function() { 
+    for (let i = 0; i < 18; i++) {
+        let b = Math.floor(Math.random() * 5);
+        console.log("b is " + b);
+        cardcontainer.innerHTML += '<div class="cards-container__card"><div class="cards-container__card__reviews-colors '+ CardsInfo[b].trustcolor +'"><p class="cards-container__card__reviews-colors__text">'+ CardsInfo[b].trust +'</p></div><div class="cards-container__card__name-block"><img class="cards-container__card__name-block__image" src="'+ CardsInfo[b].logo +'" alt="card-logo"><div class="cards-container__card__name-block__text-block"><h3 class="card-title">'+ CardsInfo[b].name +'</h3><img class="card-star-icon" src="./images/star-icon.svg" alt="star-icon"><h3 class="card-rating">'+ CardsInfo[b].rating +'</h3><h4 class="card-reviews">'+ CardsInfo[b].reviews +' отзывов</h4></div></div><div class="cards-container__card__info-block"><p class="info-block-type">Город:</p><p class="info-block-text">'+ CardsInfo[b].city +'</p><p class="info-block-type">Адрес</p><p class="info-block-text">'+ CardsInfo[b].address +'</p><p class="info-block-type">Телефон:</p><p class="info-block-text">'+ CardsInfo[b].phone +'</p><p class="info-block-type">Сайт:</p><p class="info-block-text">'+ CardsInfo[b].site +'</p></div><div class="cards-container__card__buttons-block"><button class="card-details-button"><span class="card-details-button__text">Подробнее</span></button><button class="card-share-button"><img class="card-share-button__icon" src="./images/share-icon.svg" alt="share-icon"></button></div></div>'
+    }
+};
+
+document.getElementById("order-by-block__text__order-type").onclick = function() {
+    cardcontainer.innerHTML = '';
+    var sorticon = document.getElementById("order-by-block__icon");
+    if (sorticon.className == "order-by-block__icon") {
+        sorticon.className = "order-by-block__icon-transformed";
+    } else {
+        sorticon.className = "order-by-block__icon";
+    }
+    for (let i = 0; i < 18; i++) {
+        let b = Math.floor(Math.random() * 5);
+        console.log("b is " + b);
+        cardcontainer.innerHTML += '<div class="cards-container__card"><div class="cards-container__card__reviews-colors '+ CardsInfo[b].trustcolor +'"><p class="cards-container__card__reviews-colors__text">'+ CardsInfo[b].trust +'</p></div><div class="cards-container__card__name-block"><img class="cards-container__card__name-block__image" src="'+ CardsInfo[b].logo +'" alt="card-logo"><div class="cards-container__card__name-block__text-block"><h3 class="card-title">'+ CardsInfo[b].name +'</h3><img class="card-star-icon" src="./images/star-icon.svg" alt="star-icon"><h3 class="card-rating">'+ CardsInfo[b].rating +'</h3><h4 class="card-reviews">'+ CardsInfo[b].reviews +' отзывов</h4></div></div><div class="cards-container__card__info-block"><p class="info-block-type">Город:</p><p class="info-block-text">'+ CardsInfo[b].city +'</p><p class="info-block-type">Адрес</p><p class="info-block-text">'+ CardsInfo[b].address +'</p><p class="info-block-type">Телефон:</p><p class="info-block-text">'+ CardsInfo[b].phone +'</p><p class="info-block-type">Сайт:</p><p class="info-block-text">'+ CardsInfo[b].site +'</p></div><div class="cards-container__card__buttons-block"><button class="card-details-button"><span class="card-details-button__text">Подробнее</span></button><button class="card-share-button"><img class="card-share-button__icon" src="./images/share-icon.svg" alt="share-icon"></button></div></div>'
+    }
 }
 
 console.log(CardsInfo);

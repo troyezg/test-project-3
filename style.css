@@ -5,6 +5,10 @@
     font-weight: normal; 
 } 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 
@@ -73,6 +77,11 @@ a {
     margin: 0;
 
     color: #181818;
+}
+
+.header-nav__list__text:hover {
+    transition: 0.2s color ease-in-out;
+    color: #424242;
 }
 
 .border-hidden {
@@ -252,6 +261,11 @@ a {
     border-radius: 8px;
 }
 
+.text-block__button:hover {
+    transition: 0.2s background ease-in-out;
+    background: #66bb6a;
+}
+
 .button__text {
     position: relative;
     width: 218px;
@@ -381,8 +395,14 @@ a {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
+    cursor: pointer;
 
     color: #3AB25B;
+}
+
+.order-by-block__text__order-type:hover {
+    transition: 0.2s color ease-in-out;
+    color: #66bb6a;
 }
 
 .order-by-block__icon {
@@ -390,6 +410,14 @@ a {
     width: 10px;
     height: 9px;
     margin-top: 2px;
+}
+
+.order-by-block__icon-transformed {
+    position: relative;
+    width: 10px;
+    height: 9px;
+    margin-top: 2px;
+    transform: rotate(180deg);
 }
 
 .cards-container {
@@ -433,13 +461,32 @@ a {
     width: 400px;
     height: 28px; 
 
-    background: #D8F0DE;
     border-radius: 8px 8px 0px 0px;
+}
+
+.green-trust {
+    background: #D8F0DE;
+}
+
+.yellow-trust {
+    background: #FFF7CC;
+
+    p {
+        color: #E1BD00;
+    }
+}
+
+.red-trust {
+    background: #F9DADA;
+
+    p {
+        color: #E14747;
+    }
 }
 
 .cards-container__card__reviews-colors__text {
     position: relative;
-    width: 147px;
+    width: fit-content;
     height: 16px;
     padding: 6px 0px 6px 20px;
 
@@ -603,6 +650,11 @@ a {
     border-radius: 8px;
 }
 
+.card-details-button:hover { 
+    transition: 0.2s background ease-in-out;
+    background: #66bb6a;
+}   
+
 .card-details-button__text {
     width: 85px;
     height: 20px;
@@ -651,6 +703,11 @@ a {
     background: #3AB25B;
     border: none;
     border-radius: 8px;
+}
+
+.cards-container__button:hover {
+    transition: 0.2s background ease-in-out;
+    background: #66bb6a;
 }
 
 .cards-container__button__text {
@@ -900,6 +957,11 @@ a {
     color: #181818;
 }
 
+.main-footer__text-block__text:hover {
+    transition: 0.2s color ease-in-out;
+    color: #424242;
+}
+
 .main-footer__content__button-block {
     position: relative;
     width: 265px;
@@ -930,6 +992,11 @@ a {
     border-radius: 8px;
 }
 
+.main-footer__content__button-block__add-button:hover {
+    transition: 0.2s background ease-in-out;
+    background: #c8e6c9;
+}
+
 .footer-button-text {
     font-family: 'Lato';
     font-style: normal;
@@ -957,6 +1024,11 @@ a {
     background: #3AB25B;
     border: none;
     border-radius: 8px;
+}
+
+.main-footer__content__button-block__up-button:hover { 
+    transition: 0.2s background ease-in-out;
+    background: #66bb6a;
 }
 
 .main-footer__content__line {
