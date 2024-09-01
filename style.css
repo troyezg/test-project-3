@@ -988,7 +988,10 @@ a {
 }
 
 @media only screen and (max-width: 1720px) { 
-
+    .cards-block__cards-content {
+        width: calc(100% - 630px);
+        gap: 30px 140px;
+    }
 }
 
 
@@ -1046,7 +1049,188 @@ a {
 
     /* cards then */
 
+    .cards-block {
+        gap: 0px 40px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
 
+    .cards-block__add-block {
+        width: 292px;
+        margin-top: 9px;
+        gap: 21px;
+    }
+
+    .cards-container {
+        width: 644px;
+    }
+
+    .cards-block__cards-content {
+        width: 644px;
+    }
+
+    .cards-container__card {
+        width: 312px;
+        height: 314px;
+    }
+
+    .cards-container__card__reviews-colors {
+        width: 100%;
+    }
+
+    .cards-container__card__name-block {
+        width: 270px;
+        height: 60px;
+    }
+
+    .cards-container__card__name-block__text-block {
+        margin-top: 4px;
+        gap: 2px 6px;
+    }
+
+    .card-title {
+        font-size: 18px;
+        line-height: 24px;
+        height: fit-content;
+    }
+
+    .card-star-icon {
+        width: 16px;
+        height: 15px;
+    }
+
+    .card-rating {
+        width: fit-content;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .card-reviews {
+        width: fit-content;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .cards-container__card__name-block__image {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .cards-container__card__info-block {
+        width: 272px;
+        margin-top: 3px;
+        gap: 8px 20px;
+    }
+
+    .info-block-type {
+        width: fit-content;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .info-block-text {
+        width: 194px;
+        height: 18px;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 18px;
+        overflow: hidden;  
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .cards-container__card__buttons-block {
+        width: calc(100% - 40px);
+        height: 48px;
+        padding: 0px 20px;
+        gap: 12px;
+        margin-top: 2px;
+    }
+
+    .card-details-button {
+        height: 48px;
+    }
+
+    .card-share-button {
+        padding: 14px 12px;
+        height: 48px;
+    }
+
+    .card-share-button__icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    .cards-block__add-block__add-container {
+        width: 292px;
+        height: 292px;
+    }
+
+    .cards-block__add-block__ladder-block {
+        width: 252px;
+        height: 376px;
+        padding: 18px 20px 0px 20px;
+        gap: 16px;
+    }
+
+    .ladder-block__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .ladder-block__container {
+        height: 80px;
+    }
+
+    .ladder-block__seller-container__title {
+        font-size: 16px;
+        line-height: 22px;
+        top: -41px;
+        left: 62px;
+    }
+
+    .ladder-block__seller-container__icon {
+        width: 16px;
+        height: 15px;
+        top: -62px;
+        left: 207px;
+    }
+
+    .ladder-block__seller-container__rating-text {
+        font-size: 16px;
+        line-height: 22px;
+        top: -84px;
+        left: 229px;
+    }
+
+    .ladder-block__seller-container__reviews-text {
+        font-size: 14px;
+        line-height: 18px;
+        top: -87px;
+        left: 62px;
+    }
+
+    .ladder-block__seller-container__image {
+        width: 50px;
+        height: 50px;
+        top: 8px;
+    }
+
+    .ladder-block__seller-container__bottom-text {
+        width: 252px;
+        top: -5px;
+    }
+
+    .cards-container__button {
+        margin-top: 10px;
+    }
+
+    .additional-margin {
+        margin: 0;
+    }
 
 
     /*footer then */
@@ -1092,6 +1276,103 @@ a {
     .landing-block__image {
         right: none;
         left: -140px;
+    }
+}
+
+@media only screen and (max-width: 990px) {  
+    .cards-block {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top: 51px;
+        margin-bottom: 80px;
+        gap: 80px 0px;
+    }
+
+    .cards-block__add-block {
+        width: 732px;
+        flex-direction: row;
+    }
+
+    .cards-block__add-block__ladder-block {
+        width: 278px;
+    }
+
+    .ladder-block__seller-container__icon {
+        left: 233px;
+    }
+
+    .ladder-block__seller-container__rating-text {
+        left: 255px;
+    }
+
+    .cards-block__add-block__add-container {
+        width: 394px;
+        height: 394px;
+    }
+
+    .cards-block__cards-content {
+        width: 732px;
+        gap: 22px 140px;
+    }
+
+    .cards-container {
+        width: 732px;
+        justify-content: center;
+    }
+
+    .choose-city-block {
+        width: 185px;
+    }
+
+    .choose-city-block__text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .choose-city-block__text__green {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .choose-city-block__border {
+        width: 67px;
+        height: 2px;
+        left: 3px;
+        top: -1px;
+    }
+
+    .order-by-block {
+        width: 217px;
+        height: 18px;
+        margin-top: 11px;
+    }
+
+    .order-by-block__text {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .order-by-block__text__order-type {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .cards-container__card {
+        width: 356px;
+    }
+
+    .cards-container__card__name-block {
+        width: 318px;
+    }
+
+    .cards-container__card__info-block {
+        width: 315px;
+        grid-template-columns: 60px auto;
+        gap: 8px 17px;
+    }
+
+    .cards-container__button {
+        margin-top: 18px;
     }
 }
 
@@ -1223,6 +1504,24 @@ a {
     
 }
 
+@media only screen and (max-width: 760px) {   
+    .cards-block__cards-content {
+        width: 95.5%;
+    }
+
+    .cards-block__add-block {
+        width: 95.5%;
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+
+    .cards-block__add-block__add-container {
+        width: 318px;
+        height: 318px;
+    }
+}
+
 @media only screen and (max-width: 560px) { 
     
     .landing-block__content {
@@ -1299,6 +1598,98 @@ a {
     }
 }
 
+@media only screen and (max-width: 425px) {  
+    .cards-block {
+        margin-top: 23px;
+    }
+
+    .cards-block__add-block {
+        width: 328px;
+        gap: 16px;
+    }
+
+    .cards-block__add-block__ladder-block {
+        width: 288px;
+        height: 358px;
+    }
+
+    .cards-block__add-block__ladder-block {
+        gap: 15px;
+    }
+
+    .ladder-block__seller-container__bottom-text {
+        width: 290px;
+        top: -3px;
+    }
+
+    .ladder-block__seller-container__icon {
+        left: 243px;
+    }
+
+    .ladder-block__seller-container__rating-text {
+        left: 265px;
+    }
+
+    .cards-block__add-block__add-container {
+        width: 328px;
+        height: 328px;
+    }
+
+    .cards-block__cards-content {
+        width: 328px;
+        gap: 20px;
+    }
+
+    .order-by-block {
+        width: 100%;
+        height: 34px;
+        margin: 0;
+        justify-content: center;
+        border: 1px solid #E6E7EA;
+        border-radius: 8px;
+    }
+
+    .order-by-block__text {
+        width: fit-content;
+    }
+
+    .choose-city-block {
+        height: 36px;
+    }
+
+    .cards-container {
+        gap: 16px;
+    }
+
+    .cards-container__card {
+        width: 328px;
+        height: 300px;
+        gap: 14px;
+    }
+
+    .cards-container__card__name-block {
+        width: 295px;
+    }
+
+    .cards-container__card__info-block {
+        width: 295px;
+    }
+
+    .info-block-text {
+        width: 220px;
+    }
+
+    .cards-container__card__buttons-block {
+        width: calc(100% - 32px);
+        padding: 0px 16px;
+        margin-top: 5px;
+    }
+
+    .cards-container__card__reviews-colors__text {
+        padding: 6px 0px 6px 16px;
+    }
+}
+
 @media only screen and (max-width: 360px) { 
 
     .main-header__content {
@@ -1316,6 +1707,10 @@ a {
     }
 
     /* landing then */
+
+    .landing-block {
+        height: 350px;
+    }
 
     .landing-block__image {
         position: absolute;
